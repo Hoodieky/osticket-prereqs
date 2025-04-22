@@ -136,5 +136,57 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Add Everyone and give Full Control
 
+![image](https://github.com/user-attachments/assets/98c54968-9797-4ca7-8214-a11faf19c8d1)![image](https://github.com/user-attachments/assets/5d9555fb-d214-4b3a-9275-07aabd8380e3)
+![image](https://github.com/user-attachments/assets/82e8f755-8630-4c19-98b0-25507abf87f7)![image](https://github.com/user-attachments/assets/f84ff359-89a7-4043-97ce-f1ffafbd5fe1)
 
+
+
+
+1.Finish Setting Up osTicket in the Browser
+
+- When the osTicket page loads, just click Continue
+
+- Fill in the basics:
+
+- Helpdesk Name: whatever you want to call your helpdesk
+
+- Default Email: the email where you’ll get support requests
+
+2. Install HeidiSQL (for managing the database)
+
+- From the osTicket-Installation-Files folder, install HeidiSQL
+
+- Open HeidiSQL and create a new session:
+
+- Username: root
+
+- Password: root
+
+- Connect to MySQL
+
+3. Create the osTicket Database
+
+- In HeidiSQL, create a new database called osTicket
+
+4. Finish osTicket Install in the Browser
+
+- Back in the osTicket web installer, enter the following:
+
+- MySQL Database: osTicket
+
+- MySQL Username: root
+
+- MySQL Password: root
+
+- Click Install Now! to wrap it up
+
+5. Final Steps
+
+- Once installed, head to the admin login page:
+
+- http://localhost/osTicket/scp/login.php
+
+- End-user support page will be at:
+
+- http://localhost/osTicket/
 
