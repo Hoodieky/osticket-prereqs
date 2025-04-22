@@ -23,8 +23,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - osticket installation
 - SQL
 
-![image](https://github.com/user-attachments/assets/a8fb22d1-c105-49be-a837-e957c3a5839a)![image](https://github.com/user-attachments/assets/6b538348-eb9e-4d0a-a99b-df71f0006aa4)
-![image](https://github.com/user-attachments/assets/e9abb06c-f2b3-441d-8d23-ea5173fce02f)![image](https://github.com/user-attachments/assets/9e95eb6f-b232-46f3-97fa-48103c0ee5b2)
+![image](https://github.com/user-attachments/assets/955d3354-d1c9-4a31-bfc9-e68252ebe2d3)![image](https://github.com/user-attachments/assets/3c208145-a1c9-46f8-b31b-98183ee7d0e4)
+![image](https://github.com/user-attachments/assets/a760fba7-22ad-4aad-93b4-efb0e6e9eacd)![image](https://github.com/user-attachments/assets/35a4e2f4-783f-4cb3-b4c7-81a6293ad66c)
+
+
+
 
 1. Set Up the Azure VM
 
