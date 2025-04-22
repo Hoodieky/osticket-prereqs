@@ -28,29 +28,56 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Item 4
 - Item 5
 
-<h2>Installation Steps</h2>
+![image](https://github.com/user-attachments/assets/a8fb22d1-c105-49be-a837-e957c3a5839a)![image](https://github.com/user-attachments/assets/6b538348-eb9e-4d0a-a99b-df71f0006aa4)
+![image](https://github.com/user-attachments/assets/e9abb06c-f2b3-441d-8d23-ea5173fce02f)![image](https://github.com/user-attachments/assets/9e95eb6f-b232-46f3-97fa-48103c0ee5b2)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>![image](https://github.com/user-attachments/assets/61edee98-c055-489c-a868-fb2cdbedb9d5)
+1. Set Up the Azure VM
 
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+VM Name: osticket-vm
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+Username: labuser
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+Password: osTicketPassword1!
+
+Size: 4 vCPUs running Windows 10 Pro
+
+2. Log in to the VM
+
+Use Remote Desktop and the login info above to get into the VM.
+
+3. Get the VM Ready for osTicket
+
+Download osTicket files: Grab the osTicket-Installation-Files.zip, unzip it, and drop it into a new folder on the desktop called osTicket-Installation-Files.
+
+4.Turn on IIS with CGI Support
+
+Go to Control Panel > Programs and Features > Turn Windows Features On/Off
+
+Enable IIS and under World Wide Web Services > Application Development Features, make sure CGI is checked.
+
+5. Install What osTicket Needs
+
+PHP Manager for IIS: Run PHPManagerForIIS_V1.5.0.msi from the folder.
+
+URL Rewrite Module: Run rewrite_amd64_en-US.msi from the same folder.
+
+PHP:
+
+Create a folder at C:\PHP
+
+Unzip php-7.3.8-nts-Win32-VC15-x86.zip into that folder
+
+VC Redistributable: Install VC_redist.x86.exe
+
+MySQL 5.5.62: Install mysql-5.5.62-win32.msi using the Typical Setup option
+
+Set up MySQL with:
+
+Username: root
+
+Password: root
+
+6.Done!
+
+At this point, the VM should be all set with IIS, PHP, and MySQL—ready for the osTicket installation.
+
